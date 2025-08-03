@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <Button size="lg">
-      dwq
-    </Button>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
