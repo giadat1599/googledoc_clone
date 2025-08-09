@@ -1,15 +1,12 @@
 <script setup lang="ts">
-type Emits = {
-  (e: "click", event: MouseEvent): void;
-};
-
-type Props = {
+defineProps<{
   isActive?: boolean;
   icon: Component;
-};
+}>();
 
-defineProps<Props>();
-defineEmits<Emits>();
+defineEmits<{
+  (e: "click", event: MouseEvent): void;
+}>();
 </script>
 
 <template>
